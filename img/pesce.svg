@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 70" width="120" height="70">
+  <!-- corpo -->
+  <ellipse cx="55" cy="35" rx="40" ry="22" fill="#ff6b6b" stroke="#222" stroke-width="2"/>
+  <!-- coda -->
+  <polygon points="15,35 2,18 2,52" fill="#ff4444" stroke="#222" stroke-width="2"/>
+  <!-- pinna dorsale -->
+  <path d="M 45 13 Q 58 2 65 20" stroke="#222" stroke-width="2" fill="#ff8e8e"/>
+  <!-- pinna ventrale -->
+  <path d="M 45 57 Q 55 66 62 52" stroke="#222" stroke-width="2" fill="#ff8e8e"/>
+  <!-- occhio -->
+  <circle cx="78" cy="30" r="6" fill="white" stroke="#222" stroke-width="1.5"/>
+  <circle cx="79" cy="30" r="3" fill="#111"/>
+  <circle cx="80" cy="28" r="1" fill="white"/>
+  <!-- bocca -->
+  <path d="M 93 36 Q 100 40 93 44" stroke="#222" stroke-width="2" fill="none"/>
+  <!-- squame -->
+  <path d="M 55 20 Q 60 28 55 35" stroke="#cc4444" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 45 22 Q 50 30 45 37" stroke="#cc4444" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>

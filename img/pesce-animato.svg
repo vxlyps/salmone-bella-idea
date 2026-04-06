@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 70" width="120" height="70">
+  <!-- corpo che ondeggia -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="0 55 35; 4 55 35; 0 55 35; -4 55 35; 0 55 35"
+      dur="1.2s" repeatCount="indefinite"/>
+    <ellipse cx="55" cy="35" rx="40" ry="22" fill="#6baaff" stroke="#222" stroke-width="2"/>
+    <!-- pinna dorsale -->
+    <path d="M 45 13 Q 58 2 65 20" stroke="#222" stroke-width="2" fill="#8ec6ff"/>
+    <!-- pinna ventrale -->
+    <path d="M 45 57 Q 55 66 62 52" stroke="#222" stroke-width="2" fill="#8ec6ff"/>
+    <!-- occhio -->
+    <circle cx="78" cy="30" r="6" fill="white" stroke="#222" stroke-width="1.5"/>
+    <circle cx="79" cy="30" r="3" fill="#111"/>
+    <circle cx="80" cy="28" r="1" fill="white"/>
+    <!-- bocca che si apre e chiude -->
+    <path d="M 93 36 Q 100 40 93 44" stroke="#222" stroke-width="2" fill="none">
+      <animate attributeName="d"
+        values="M 93 36 Q 100 40 93 44; M 93 37 Q 97 40 93 43; M 93 36 Q 100 40 93 44"
+        dur="0.8s" repeatCount="indefinite"/>
+    </path>
+    <!-- squame -->
+    <path d="M 55 20 Q 60 28 55 35" stroke="#3a7acc" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 45 22 Q 50 30 45 37" stroke="#3a7acc" stroke-width="1" fill="none" opacity="0.5"/>
+  </g>
+  <!-- coda che sbatte -->
+  <polygon points="15,35 2,18 2,52" fill="#5599ee" stroke="#222" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate"
+      values="0 15 35; 20 15 35; 0 15 35; -20 15 35; 0 15 35"
+      dur="0.6s" repeatCount="indefinite"/>
+  </polygon>
+</svg>
