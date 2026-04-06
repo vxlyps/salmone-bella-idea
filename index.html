@@ -178,6 +178,16 @@
       position: relative;
       z-index: 1;
     }
+
+    /* ===== FORM COMMENTI FINTO ===== */
+    #messaggio-inviato {
+      display: none;
+      margin-top: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      font-family: Times New Roman, serif;
+    }
   </style>
 </head>
 <body>
@@ -212,25 +222,6 @@
      Guarda che cosa abbiamo scoperto!<br>
       Ti fa risparmiare un sacco di soldi 😂
     </h3>
-  </center>
-
-  <!-- ============ SALMONE 3D ============ -->
-  <center>
-    <p style="color:green; font-size:13px;"><b>:)))))(</b></p>
-    <div class="sketchfab-embed-wrapper">
-      <iframe title="Salmon" frameborder="0" allowfullscreen mozallowfullscreen="true"
-        webkitallowfullscreen="true"
-        allow="autoplay; fullscreen; xr-spatial-tracking"
-        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
-        width="480" height="320"
-        src="https://sketchfab.com/models/a03b5d478cfe4778b4df1b6884acaedd/embed">
-      </iframe>
-      <p style="font-size:11px; color:#4A4A4A; margin:3px;">
-        <a href="https://sketchfab.com/3d-models/salmon-a03b5d478cfe4778b4df1b6884acaedd" target="_blank" rel="nofollow" style="color:#1CAAD9; font-weight:bold;">Salmon</a>
-        by <a href="https://sketchfab.com/Owltic" target="_blank" rel="nofollow" style="color:#1CAAD9; font-weight:bold;">Owltic</a>
-        on <a href="https://sketchfab.com" target="_blank" rel="nofollow" style="color:#1CAAD9;">Sketchfab</a>
-      </p>
-    </div>
   </center>
 
   <hr>
@@ -305,6 +296,25 @@
   <!-- ============ SEZIONE DONAZIONE ============ -->
   <h2>🎸 Aiuta il salmone</h2>
   <div style="margin-left:20px; margin-bottom:15px;">
+
+    <center>
+      <p style="color:green; font-size:13px;"><b>:)))))(</b></p>
+      <div class="sketchfab-embed-wrapper">
+        <iframe title="Salmon" frameborder="0" allowfullscreen mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+          width="480" height="320"
+          src="https://sketchfab.com/models/a03b5d478cfe4778b4df1b6884acaedd/embed">
+        </iframe>
+        <p style="font-size:11px; color:#4A4A4A; margin:3px;">
+          <a href="https://sketchfab.com/3d-models/salmon-a03b5d478cfe4778b4df1b6884acaedd" target="_blank" rel="nofollow" style="color:#1CAAD9; font-weight:bold;">Salmon</a>
+          by <a href="https://sketchfab.com/Owltic" target="_blank" rel="nofollow" style="color:#1CAAD9; font-weight:bold;">Owltic</a>
+          on <a href="https://sketchfab.com" target="_blank" rel="nofollow" style="color:#1CAAD9;">Sketchfab</a>
+        </p>
+      </div>
+    </center>
+
     <p>
       <a href="https://www.essereanimali.org/sostienici/" target="_blank"
          style="font-size:20px; color:red; font-weight:bold; text-decoration:underline;">
@@ -329,27 +339,15 @@
   <!-- ============ SEZIONE COMMENTI ============ -->
   <h2>💬 ma solo a noi fa strano?</h2>
 
-  <!-- Commenti pubblici via Disqus -->
   <div style="margin:15px;">
     <p><b>di stop alla salmonella</b></p>
 
-    <div id="disqus_thread"></div>
-    <script>
-      /* TODO: sostituire SHORTNAME con lo shortname Disqus reale */
-      var disqus_config = function () {
-        this.page.url  = 'https://salmone-bella-idea.valerio-francio.workers.dev';
-        this.page.identifier = 'home';
-      };
-      (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-salmonellabon-netlify-app.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>
-      Attiva JavaScript per vedere i commenti.
-    </noscript>
+    <div class="commenti-form">
+      <textarea id="campo-commento" placeholder="scrivi qualcosa... se proprio ci tieni"></textarea>
+      <br><br>
+      <button onclick="inviaCommento()">INVIA</button>
+      <div id="messaggio-inviato">Non c'è un cazzo da commentare purtroppo... che pena mannaggia :/</div>
+    </div>
   </div>
 
   <hr>
@@ -358,6 +356,13 @@
   <footer>
     🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀🐟💀
   </footer>
+
+  <script>
+    function inviaCommento() {
+      document.getElementById('campo-commento').value = '';
+      document.getElementById('messaggio-inviato').style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
