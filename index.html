@@ -228,7 +228,7 @@
   <h2>🎵 Le Canzoni del Futuro (fatto in 30 secondi)</h2>
 
   <div class="canzone-blocco">
-    <strong>"l'AI nella stanza (feat suno)"</strong><br><br>
+    <strong>Canzone N°1 — "l'AI nella stanza (feat suno)"</strong><br><br>
     <audio controls src="canzoni/canzone1.mp3">
       Il tuo browser non supporta l'audio. Aggiorna Internet Explorer. 😂
     </audio>
@@ -237,7 +237,7 @@
   </div>
 
   <div class="canzone-blocco">
-    <strong>"salmoneisback (2 anni dopo aver girato un video con il maestro della paura)"</strong><br><br>
+    <strong>Canzone N°2 — "salmoneisback (2 anni dopo aver girato un video con il maestro della paura)"</strong><br><br>
     <audio controls src="canzoni/canzone2.mp3">
       Il tuo browser non supporta l'audio. Aggiorna Internet Explorer. 😂
     </audio>
@@ -310,32 +310,27 @@
   <!-- ============ SEZIONE COMMENTI ============ -->
   <h2>💬 ma solo a noi fa strano?</h2>
 
-  <!-- TODO: collegare a backend per commenti -->
-  <!-- Opzioni future: utterances su GitHub, Disqus free, o backend custom -->
-
-  <div class="commenti-form" style="margin-left:20px;">
+  <!-- Commenti pubblici via Disqus -->
+  <div style="margin:15px;">
     <p><b>di stop alla salmonella</b></p>
 
-    <form onsubmit="alert('Commenti non ancora attivi. Torna presto! 🐟'); return false;">
-      <label for="nome">Nome (o metti "Anonimo", non ci interessa sapere chi sei):</label><br>
-      <input
-        type="text"
-        id="nome"
-        name="nome"
-        placeholder="Il tuo nome"
-        style="font-size:14px; border: 3px inset gray; padding:3px;"
-      ><br><br>
-
-      <label for="commento">Il tuo commento:</label><br>
-      <textarea id="commento" name="commento" placeholder="Scrivi qui... niente insulti pero, rimani civile."></textarea><br><br>
-
-      <button type="submit">INVIA IL COMMENTO &gt;&gt;</button>
-    </form>
-
-    <br>
-    <p style="font-size:11px; color:#666;">
-      (i commenti non vengono ancora salvati da nessuna parte. lavori in corso. siamo un ragazzino. abbiamo tempo.)
-    </p>
+    <div id="disqus_thread"></div>
+    <script>
+      /* TODO: sostituire SHORTNAME con lo shortname Disqus reale */
+      var disqus_config = function () {
+        this.page.url  = 'https://salmonebellaideasareelai.it';
+        this.page.identifier = 'home';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://https-salmonellabon-netlify-app.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>
+      Attiva JavaScript per vedere i commenti.
+    </noscript>
   </div>
 
   <hr>
